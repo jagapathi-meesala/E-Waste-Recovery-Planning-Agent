@@ -1,0 +1,21 @@
+name: assess-ewaste-inventory
+description: Review caller-provided e-waste inventory completeness and flag handling review needs.
+input_schema:
+  type: object
+  properties:
+    items:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+  required:
+    - items
+output_schema:
+  type: object
+  properties:
+    item_count:
+      type: integer
+    items:
+      type: array
+    note:
+      type: string

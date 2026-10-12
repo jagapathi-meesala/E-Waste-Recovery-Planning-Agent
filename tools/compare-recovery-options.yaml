@@ -1,0 +1,21 @@
+name: compare-recovery-options
+description: Organize caller-provided reuse, repair, refurbishment, recycling, and disposal options.
+input_schema:
+  type: object
+  properties:
+    options:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+  required:
+    - options
+output_schema:
+  type: object
+  properties:
+    option_count:
+      type: integer
+    options:
+      type: array
+    note:
+      type: string

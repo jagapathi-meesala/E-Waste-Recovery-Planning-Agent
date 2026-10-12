@@ -1,0 +1,22 @@
+spec_version: "0.1.0"
+name: e-waste-recovery-planning-agent
+version: 1.0.0
+description: A framework-independent agent for organizing electronic-waste inventories, recovery options, and responsible handling plans from caller-provided data.
+author: Agent Passport Project
+license: MIT
+skills:
+  - ewaste-inventory
+  - recovery-assessment
+  - responsible-handling
+tools:
+  - assess-ewaste-inventory
+  - compare-recovery-options
+  - plan-responsible-handling
+runtime:
+  max_turns: 20
+  timeout: 120
+tags:
+  - e-waste
+  - recycling
+  - recovery
+  - circular-economy

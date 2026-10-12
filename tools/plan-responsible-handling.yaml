@@ -1,0 +1,37 @@
+name: plan-responsible-handling
+description: Create a responsible e-waste collection and handoff checklist from supplied details.
+input_schema:
+  type: object
+  properties:
+    items:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+    destination:
+      type: object
+      additionalProperties: true
+    tasks:
+      type: array
+      items:
+        type: object
+        additionalProperties: true
+  required:
+    - items
+    - destination
+    - tasks
+output_schema:
+  type: object
+  properties:
+    items_count:
+      type: integer
+    destination:
+      type: string
+    destination_information_gaps:
+      type: array
+    checklist:
+      type: array
+    recommended_checks:
+      type: array
+    note:
+      type: string
